@@ -1,139 +1,166 @@
 🌟 Indra AI — Intelligent RAG Chatbot (Streamlit + Qdrant + OpenAI)
 
-Indra AI is a powerful, Retrieval-Augmented Generation (RAG) chatbot that combines:
+Your all-in-one intelligent assistant powered by Retrieval-Augmented Generation (RAG).
+Ask questions, upload documents, fetch Wikipedia context — Indra AI understands and answers with precision.
 
-Streamlit UI
+<div align="left">
 
-OpenAI embeddings + GPT responses
 
-Qdrant vector database
 
-Wikipedia search
 
-PDF, TXT, DOCX document ingestion
 
-Ask questions, upload documents, and get context-aware answers instantly.
 
-✨ Features
-🤖 Smart Chat Interface
 
-A modern Streamlit UI with chat bubbles, animation, and memory.
 
-📄 Document Upload & RAG
 
-Upload:
 
-PDF
 
-TXT
 
-DOCX
+</div>
+🚀 Overview
 
-Indra AI stores chunks in Qdrant Vector DB and retrieves the most relevant context using embeddings.
+Indra_AI is a Retrieval-Augmented AI Chatbot that allows users to:
 
-🌐 Wikipedia Retrieval
+✔ Ask natural questions
+✔ Upload PDF/TXT/DOCX files
+✔ Retrieve intelligent context using Qdrant Vector Search
+✔ Automatically fetch Wikipedia summaries
+✔ Generate accurate answers using OpenAI embeddings
 
-Automatically fetches summary from Wikipedia when no documents are uploaded.
+This project demonstrates full-stack AI engineering with embeddings, vector databases, and LLM-based reasoning — built entirely in Python.
 
-🔍 Accurate Similarity Matching
+🎯 Features
+🤖 Smart Conversational Chat
 
-Uses:
+Elegant Streamlit UI with natural conversation flow.
+
+📚 RAG Document Question-Answering
+
+Upload documents → They are chunked, embedded & indexed in Qdrant.
+
+🌐 Wikipedia Summaries
+
+When no documents are available, Indra AI fetches context automatically.
+
+⚡ Fast Vector Search
+
+Powered by:
 
 sentence-transformers
 
-FAISS / Qdrant similarity search
+Qdrant-client
 
-📦 No Code Changes Needed
+FAISS CPU
 
-Runs “as is” — just install and run.
+🔐 Secure API Usage
 
-📁 Project Structure
+.env file supported (key not exposed in repo).
+.env.example template provided.
+
+📦 Zero-Code Setup
+
+Clone → Install → Run.
+
+🗂️ Project Structure
 Indra_AI/
 │── rag_backend/
-│   ├── app.py               # Main Streamlit App
-│   ├── main.py              # Legacy CLI Version (kept for reference)
+│   ├── app.py               # Streamlit main app
+│   ├── main.py              # Legacy CLI version
 │   ├── embedder.py
 │   ├── generator.py
 │   ├── evaluation.py
 │   ├── vector.py
-│   ├── pdf_loader.py
 │   ├── wikipedia_loader.py
+│   ├── pdf_loader.py
 │   ├── requirements.txt
 │
 │── .env.example
 │── .gitignore
 │── README.md
-│── assets/                 # (Create this folder manually)
+│── venv/
+│── assets/  (optional)
 │    ├── screenshot.png
 │    └── demo.gif
 
-🛠️ Installation
-Step 1 — Clone the Repository
-git clone https://github.com/yourusername/Indra_AI
+🔧 Installation
+1️⃣ Clone the Repository
+git clone https://github.com/arshdeepsarsh/Indra_AI.git
 cd Indra_AI
 
-Step 2 — Create Virtual Environment
+2️⃣ Create Virtual Environment
 python -m venv venv
 
-Step 3 — Activate venv
-venv\Scripts\activate     # Windows
+3️⃣ Activate
 
-Step 4 — Install Dependencies
+Windows:
+
+venv\Scripts\activate
+
+4️⃣ Install Dependencies
 pip install -r rag_backend/requirements.txt
 
-Step 5 — Configure Environment
+5️⃣ Add API Key
 
-Create .env file:
+Create .env:
 
-OPENAI_API_KEY=your_real_key_here
+OPENAI_API_KEY=your_key_here
 
-
-Or copy template:
-
-copy .env.example .env
-
-
-Add your key inside it.
-
-🚀 Run the App
+▶️ Run the App
 streamlit run rag_backend/app.py
 
 
-The app opens automatically at:
+The chatbot will open at:
 
 👉 http://localhost:8501
 
 📸 Screenshots
 
-(Add screenshots in your assets/ folder)
+(Upload your screenshot into /assets/screenshot.png and update below)
 
 ![IndraAI UI](assets/screenshot.png)
 
-🧩 How It Works: RAG Architecture
-User Query
-    ↓
-Wikipedia Fetch (optional)
-    ↓
-Embedding (OpenAI)
-    ↓
-Vector Search (Qdrant)
-    ↓
-Ranked Context
-    ↓
-GPT-based Answer Generation
+🔬 How It Works (RAG Pipeline)
+User Query/Document
+         ↓
+Embedding Generation (OpenAI)
+         ↓
+Vector Indexing (Qdrant)
+         ↓
+Context Retrieval (FAISS Similarity)
+         ↓
+LLM Answer Generation (ChatCompletion)
 
-🗺️ Roadmap
 
- Add chat history persistence
+This hybrid approach ensures:
 
- Add support for multiple PDFs
+✔ High accuracy
+✔ Context-aware responses
+✔ Faster answer generation
 
- Support Gemini / Qwen local mode
+📌 Roadmap
 
- Improve UI animations
+ Add multi-document support
+
+ Add conversational memory
+
+ Add Gemini/Qwen local support
+
+ Add history saving
+
+ Deploy online (Streamlit Cloud / HuggingFace Spaces)
+
+🤝 Contributing
+
+Pull requests welcome!
+Please open an issue for feature requests.
 
 🧑‍💻 Author
 
 Arshdeep Singh
-AI & Machine Learning Engineer
-India
+AI & Software Engineering Enthusiast
+
+📜 License
+
+This project is under the MIT License.
+
+🌟 If you like this project → Give it a STAR ⭐ on GitHub!
