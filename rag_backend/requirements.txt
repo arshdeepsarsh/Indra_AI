@@ -1,0 +1,9 @@
+streamlit
+openai
+python-dotenv
+qdrant-client
+faiss-cpu
+sentence-transformers
+wikipedia
+pdfplumber
+python-docx

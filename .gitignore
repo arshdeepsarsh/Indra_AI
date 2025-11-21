@@ -1,0 +1,21 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+.venv/
+
+# Ignore environment files (API keys)
+.env
+*.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore temporary files
+*.log
+*.tmp
