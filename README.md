@@ -1,4 +1,16 @@
-# Indra AI — RAG Chatbot using Streamlit, Qdrant & OpenAI
+# 🤖 Indra AI — RAG Chatbot using Streamlit, Qdrant & OpenAI
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-red?logo=streamlit)
+![RAG](https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-purple)
+![OpenAI](https://img.shields.io/badge/OpenAI-Embeddings-green)
+![Vector DB](https://img.shields.io/badge/VectorDB-Qdrant-blue)
+![FAISS](https://img.shields.io/badge/VectorSearch-FAISS-orange)
+![LLM](https://img.shields.io/badge/LLM-Powered-brightgreen)
+![Status](https://img.shields.io/badge/Project-Active-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+
 
 Indra AI is a Retrieval-Augmented Generation (RAG) chatbot that allows users to:
 
@@ -11,7 +23,7 @@ Built with Streamlit UI, Qdrant Vector DB, and OpenAI embeddings.
 
 ---
 
-## Features
+## 🚀 Features
 
 - RAG-based question answering  
 - PDF/Text document support  
@@ -22,7 +34,7 @@ Built with Streamlit UI, Qdrant Vector DB, and OpenAI embeddings.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 Indra_AI/
@@ -44,7 +56,7 @@ Indra_AI/
 
 ---
 
-## Installation
+## ⚙️ Installation
 
 ### 1. Clone the repository
 ```bash
@@ -93,7 +105,7 @@ OPENAI_API_KEY=your_api_key_here
 
 ---
 
-## Run the Application
+## ▶️ Run the Application
 
 ### Streamlit UI
 ```bash
@@ -107,7 +119,7 @@ python rag_backend/main.py
 
 ---
 
-## How It Works (RAG Pipeline)
+## 🧠 How It Works (RAG Pipeline)
 
 ```
 User Query / Document Upload
@@ -125,7 +137,7 @@ Response Generation
 
 ---
 
-## Roadmap
+## 🛣️ Roadmap
 
 - Chat history  
 - Qwen/Gemini model support  
@@ -135,7 +147,7 @@ Response Generation
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Pull requests are welcome.  
 Please open an issue to discuss new features or improvements.
@@ -148,6 +160,6 @@ MIT License
 
 ---
 
-## Support
+## ⭐ Support
 
 If you find this project useful, consider giving it a ⭐ on GitHub!
